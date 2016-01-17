@@ -42,11 +42,23 @@ body {
   }
 }
 
+.no-padding-left-right {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+img.img-full-width {
+  width: 100%;
+}
+
 .hero-element {
   //padding: 3rem 1.5rem;
   height: 100vh;
   text-align: left;
   color: #FFF;
+  @media screen and (max-width: 47.99999em) { 
+    text-align: center;
+  }
   hr {
     border-color: #FFF;
   }
@@ -116,6 +128,13 @@ body {
       orphans: 3;
     }
   } 
+}
+
+.opening {
+  p {
+    font-size: 1.15rem;
+    font-weight: 300;
+  }
 }
 
 // IDs
