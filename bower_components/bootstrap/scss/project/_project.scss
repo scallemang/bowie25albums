@@ -1,0 +1,128 @@
+// Font imports
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,200,200italic);
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=Cinzel:400,900);
+
+// Typography
+$font-text: "Muli", "Futura", sans-serif;
+$font-display: "Cinzel", Georgia, serif;
+$font-header: "Source Sans Pro",sans-serif,"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+
+// Colours
+$color-pink: #EC407A;
+$color-blue: #03A9F4;
+
+// Sitewide
+body {
+  //padding-top: 5rem;
+  color: $gray-dark;
+  p {
+  	font-family: $font-text;
+  	font-weight: 400;
+  }
+}
+
+// Classes
+.navbar {
+  font-family: $font-header;
+  &.bg-inverse {
+    background-color: #FFF;
+    box-shadow: 0px -8px 18px #333;
+  }
+  &.navbar-dark {
+    .navbar-brand {
+      color: $color-pink;
+      font-family: $font-header;
+    }
+    .navbar-nav {
+      .nav-link {
+        color: $color-blue;
+      }
+    }
+  }
+}
+
+.hero-element {
+  //padding: 3rem 1.5rem;
+  height: 100vh;
+  text-align: left;
+  color: #FFF;
+  hr {
+    border-color: #FFF;
+  }
+  .hero-interior {
+  	position: absolute;
+    top:50%;
+    left: 0%;
+    transform:translate(0%, -50%);
+    -webkit-transform:translate(0%, -50%);
+  }
+  h1, h2, h3 {
+  	font-family: $font-display;
+  	font-weight: 400;
+  }
+  p {
+  	font-family: $font-text;
+    font-weight: 300;
+  }
+}
+
+.albums {
+  img {
+    margin-bottom: 0.5rem;
+  }
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .row {
+    margin-bottom: 1rem;
+  }
+  .fa {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: right;
+    display: block;
+    color: #e52d27;
+  }
+  .album-title {
+    h3, h4 {
+      font-family: $font-header;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+    h3 {
+      color: #F00000;
+      margin-bottom: 0.25rem;
+    }
+    h5 {
+      font-family: $font-header;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 0.85rem;
+      line-height: 0.85rem;
+    }
+  }
+}
+
+.columns {
+  p {
+    @media screen and (min-width: 768px) {
+      column-count: 2;
+      widows: 3;
+      orphans: 3;
+    }
+  } 
+}
+
+// IDs
+#home-hero {
+  background-color: #607D8B;
+}
+
+#home-main {
+  padding-top: 5rem;
+}
