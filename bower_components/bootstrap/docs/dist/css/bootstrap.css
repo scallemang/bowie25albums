@@ -6240,10 +6240,25 @@ body p {
   color: #03a9f4;
 }
 
+.no-padding-left-right {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+img.img-full-width {
+  width: 100%;
+}
+
 .hero-element {
   height: 100vh;
   color: #fff;
   text-align: left;
+}
+
+@media screen and (max-width: 47.99999em) {
+  .hero-element {
+    text-align: center;
+  }
 }
 
 .hero-element hr {
@@ -6319,6 +6334,11 @@ body p {
     widows: 3;
     orphans: 3;
   }
+}
+
+.opening p {
+  font-size: 1.15rem;
+  font-weight: 300;
 }
 
 #home-hero {
