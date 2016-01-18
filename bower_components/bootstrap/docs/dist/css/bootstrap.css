@@ -6221,6 +6221,12 @@ body p {
   font-weight: 400;
 }
 
+*:focus,
+*:active {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
 .navbar {
   font-family: "Source Sans Pro", sans-serif, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
