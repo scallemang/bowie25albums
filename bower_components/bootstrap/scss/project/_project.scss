@@ -42,6 +42,10 @@ body {
     .navbar-nav {
       .nav-link {
         color: $color-blue;
+        transition: all 500ms;
+        &:hover {
+          color: #0277BD;
+        }
       }
     }
   }
