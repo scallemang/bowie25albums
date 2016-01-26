@@ -24,66 +24,32 @@
 
   <body>
 
-    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
-      <a class="navbar-brand" href="#">Vinyl Junkie | Bowie&rsquo;s 25</a>
-      <!-- <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Brand</a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse" role="navigation">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsing-navbar">
+        &#9776;
+      </button>
+
+      <div class="collapse navbar-toggleable-xs" id="collapsing-navbar">
+        <a class="navbar-brand" href="http://scallemang.ca/bowie25albums">Vinyl Junkie | Bowie&rsquo;s 25</a>
         <ul class="nav navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="https://play.spotify.com/user/colmtobin/playlist/1XpYg6LBpkvK65gyo2KL4x?play=true&utm_source=open.spotify.com&utm_medium=open">Spotify playlist (by @colmtobin)</a>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ca.linkedin.com/in/scallemang" target="_blank">Connect</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="mailto:sca@scallemang.ca">Contact</a>a>
+            <a class="nav-link" href="https://github.com/scallemang/bowie25albums/issues" target="_blank">Issues</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://ca.linkedin.com/in/scallemang">Connect</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/scallemang/bowie25albums/issues">Report issues (GitHub)</a>a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Spotify &amp; related links
+            </a>
+            <div class="dropdown-menu" aria-labelledby="Preview">
+              <a class="dropdown-item nav-link" href="https://play.spotify.com/user/colmtobin/playlist/1XpYg6LBpkvK65gyo2KL4x?play=true&utm_source=open.spotify.com&utm_medium=open" target="_blank">Spotify playlist (by @colmtobin)</a>
+              <a class="dropdown-item nav-link" href="http://www.openbooktoronto.com/news/special_feature_how_read_bowie">Bowie&rsquo;s Top 100 Books</a>
+              <a class="dropdown-item nav-link" href="http://www.theguardian.com/culture/2010/jan/24/david-bowie-on-his-ipod">&ldquo;What&rsquo;s on David Bowie&rsquo;s iPod?&rdquo;</a>
+            </div>
           </li>
         </ul>
-      </div> -->
-    </nav>
-
-
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Vinyl Junkie | Bowie&rsquo;s 25</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="https://play.spotify.com/user/colmtobin/playlist/1XpYg6LBpkvK65gyo2KL4x?play=true&utm_source=open.spotify.com&utm_medium=open">Spotify playlist (by @colmtobin)</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mailto:sca@scallemang.ca">Contact</a>a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://ca.linkedin.com/in/scallemang">Connect</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/scallemang/bowie25albums/issues">Report issues (GitHub)</a>a>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+      </div>
     </nav>
 
     <div id="home-hero" class="container-fluid">
@@ -484,7 +450,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/project.js"></script>
+    <!--<script src="bower_components/bootstrap/dist/js/project.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--<script src="bower_components/bootstrap/js/ie10-viewport-bug-workaround.js"></script>-->
     <script>
