@@ -43,7 +43,7 @@ body {
       .nav-link {
         color: $color-blue;
         transition: all 500ms;
-        &:hover {
+        &:hover, &:focus, &:active {
           color: #0277BD;
         }
       }
@@ -153,4 +153,37 @@ img.img-full-width {
 
 #home-main {
   padding-top: 5rem;
+}
+
+// Navbar
+.navbar-toggler {
+  padding: .5rem .75rem .5rem 0;
+}
+
+.navbar-brand {
+  float: none;
+}
+.navbar-nav .nav-item {
+  float: none;
+}
+.navbar-divider,
+.navbar-nav .nav-item+.nav-item,
+.navbar-nav .nav-link + .nav-link {
+  margin-left: 0;
+}
+@media (min-width: 34em) {
+  .navbar-brand {
+    float: left;
+  }
+  .navbar-nav .nav-item {
+    float: left;
+  }
+  .navbar-divider,
+  .navbar-nav .nav-item+.nav-item,
+  .navbar-nav .nav-link + .nav-link {
+    margin-left: 0.9rem;
+    &.dropdown-item {
+      margin-left: 0;
+    }
+  }
 }
