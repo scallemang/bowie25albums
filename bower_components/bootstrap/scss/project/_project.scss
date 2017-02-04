@@ -77,10 +77,17 @@ img.img-full-width {
     left: 0%;
     transform:translate(0%, -50%);
     -webkit-transform:translate(0%, -50%);
+    > .row { 
+      display: flex; 
+      align-items: center; 
+    }
   }
   h1, h2, h3 {
   	font-family: $font-display;
   	font-weight: 400;
+  }
+  h1 { 
+    font-size: 2.45rem;
   }
   p {
   	font-family: $font-text;
